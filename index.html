@@ -1,15 +1,109 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Jenkins AWS Project</title>
-    <style>
-                body { font-family: Arial, sans-serif; text-align: center; margin-top: 80px; background-color: #f0f4f8; }
-                h1 { color: #2b6cb0; }
-                p { font-size: 18px; color: #333; }
-    </style>
- </head>
- <body>
-            <h1>Hello from Jenkins + AWS!</h1>
-            <p>Version 1.0 - Deployed automatically via CI/CD.</p>
- </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #a1c4fd 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+      max-width: 450px;
+      width: 100%;
+      padding: 40px 30px;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+      text-align: center;
+      animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    .emoji-cake {
+      font-size: 4rem;
+      display: inline-block;
+      margin-bottom: 16px;
+      animation: bounce 2s infinite ease-in-out;
+    }
+
+    h1 {
+      color: #ff4b72;
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .recipient {
+      color: #555;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .sender {
+      display: inline-block;
+      padding: 10px 24px;
+      background: linear-gradient(135deg, #ff6b8b, #ff8e53);
+      color: #fff;
+      font-weight: 600;
+      border-radius: 50px;
+      box-shadow: 0 6px 15px rgba(255, 107, 139, 0.35);
+    }
+
+    @keyframes popIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="emoji-cake">🎂</div>
+    <h1>Happy Birthday!</h1>
+    <div class="recipient">Dear [Name],</div>
+    <p class="message">
+      Wishing you a day filled with love, laughter, and all your favorite things. 
+      May the year ahead bring you endless happiness, good health, and exciting adventures!
+    </p>
+    <div class="sender">With love, [Your Name] ✨</div>
+  </div>
+
+</body>
 </html>
